@@ -96,9 +96,9 @@ section h2 {
 
 .card {
   background: white;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
-  border: 5px solid #0ac90a; /* light green */
+  border: 3px solid #0ac90a; /* light green */
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
@@ -106,7 +106,7 @@ section h2 {
 }
 
 .card:hover {
-  border: 3px solid #0ac90a; /* shrink border */
+  border: 1px solid #0ac90a; /* shrink border */
   box-shadow: 5px 5px 0px #204020; /* black only bottom-right */
 }
 
@@ -154,6 +154,48 @@ section h2 {
 .card-content .view-link:hover {
   text-decoration: underline;
 }
+
+/* Rough border (fake torn-paper look) */
+.article-card::before, .project-card::before {
+  content: "";
+  position: absolute;
+  top: -10px; left: -10px; right: -10px; bottom: -10px;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0px,
+    transparent 8px,
+    rgba(0,0,0,0.05) 9px,
+    transparent 10px
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Keep text above torn effect */
+.article-card * , .project-card * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #004080;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background: #4CAF50;   /* turns green on hover */
+  color: #fff;
+  box-shadow: 3px 3px 0px black; /* sexy right-bottom shadow */
+}
+
 
 /* ---------- Education & Skills ---------- */
 .education, .skills {
