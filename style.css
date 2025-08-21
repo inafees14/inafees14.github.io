@@ -116,6 +116,7 @@ section h2 {
   height: auto;
   aspect-ratio: 640/427;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card-content {
