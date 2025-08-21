@@ -57,7 +57,7 @@ main {
   background: white;
   padding: 2em;
   border-radius: 12px;
-  border: 10px /* light green border */
+  border: 10px;
 }
 
 .profile-card img {
@@ -202,6 +202,8 @@ section h2 {
   border-radius: 12px;
   padding: 1.5em;
   border: 10px ;
+  background: #f5fff6;
+
 }
 
 /* ---------- Connections Section ---------- */
