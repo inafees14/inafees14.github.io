@@ -188,6 +188,13 @@ section h2 {
   margin-bottom: 20px;
 
 }
+.skills .concepts {
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-type: "✨ ";
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 /* ---------- Connections Section ---------- */
 .connections {
