@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nafees Iqbal - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -17,102 +19,119 @@
     </ul>
   </nav>
 
-  <!-- Hero/Profile Section -->
-  <header class="hero">
-    <div class="profile-card">
-      <img src="assets/Profile.jpg" alt="Nafees Iqbal" class="profile-pic">
-      <h1>Hi, I'm Mohammed Nafees Iqbal 👋</h1>
-      <p>Masters in Data Science | AI & ML Enthusiast | Researcher</p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/nafees-iqbal" target="_blank">LinkedIn</a>
-        <a href="https://github.com/inafees14" target="_blank">GitHub</a>
-        <a href="mailto:inafees14@gmail.com">Email</a>
-      </div>
-    </div>
-  </header>
-
   <main>
-    <!-- Skills Section -->
-    <section class="skills">
-      <h2>💡 Skills & Tools</h2>
-      <div class="badge-grid">
-        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
-        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow">
-        <img src="https://img.shields.io/badge/RStudio-75AADB?logo=rstudio&logoColor=white" alt="RStudio">
-        <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
-        <img src="https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white" alt="SQL">
-        <img src="https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white" alt="LaTeX">
-        <!-- Add more badges -->
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-      <h2>🚀 Featured Projects</h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="assets/fruits.jpg" alt="Fruit Classification">
-          <h3>Fruit Image Classification</h3>
-          <p>Deep learning system using MobileNetV2 (92% accuracy).</p>
-          <a href="https://github.com/inafees14/Fruits_classification" target="_blank">View Project</a>
+    <!-- Left Column -->
+    <div class="left-column">
+      <!-- Hero/Profile Section -->
+      <header class="hero">
+        <div class="profile-card">
+          <img src="assets/Profile.jpg" alt="Nafees Iqbal" class="profile-pic">
+          <h1>Hi, I'm Mohammed Nafees Iqbal 👋</h1>
+          <p>Masters in Data Science | AI & ML Enthusiast | Researcher</p>
+          <div class="connections">
+            <a href="https://linkedin.com/in/nafees-iqbal" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/inafees14" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:inafees14@gmail.com">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+          </div>
         </div>
-        <div class="card">
-          <img src="assets/mental_health.jpg" alt="Mental Health Study">
-          <h3>Mental Health & Social Media</h3>
-          <p>Statistical analysis of 348 participants to study depression predictors.</p>
-          <a href="#">Read More</a>
-        </div>
-        <!-- Add more projects -->
-      </div>
-    </section>
+      </header>
 
-    <!-- Articles Section -->
-    <section class="articles">
-      <h2>📝 Latest Articles</h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="assets/transfer.jpg" alt="Article 1">
-          <h3>Understanding Transfer Learning</h3>
-          <p>A beginner-friendly guide to modern DL techniques.</p>
-          <a href="#">Read Article</a>
+      <!-- Skills Section -->
+      <section class="skills">
+        <h2>💡 Skills & Tools</h2>
+        <div class="badge-grid">
+          <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+          <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow">
+          <img src="https://img.shields.io/badge/RStudio-75AADB?logo=rstudio&logoColor=white" alt="RStudio">
+          <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
+          <img src="https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white" alt="SQL">
+          <img src="https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white" alt="LaTeX">
         </div>
-        <div class="card">
-          <img src="assets/ai_mental.jpg" alt="Article 2">
-          <h3>AI & Mental Health</h3>
-          <p>How machine learning models can support psychological research.</p>
-          <a href="#">Read Article</a>
+      </section>
+
+      <!-- Education Section -->
+      <section class="education">
+        <h2>🎓 Education Journey</h2>
+        <ul class="timeline">
+          <li>
+            <h3>M.Sc Data Science</h3>
+            <p>Aligarh Muslim University (2024–2026)</p>
+            <small>Advanced ML, Big Data Analytics, NLP, DBMS</small>
+          </li>
+          <li>
+            <h3>B.Sc Statistics</h3>
+            <p>Aligarh Muslim University (2021–2024)</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <!-- Projects Section -->
+      <section class="projects">
+        <h2>🚀 Featured Projects</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="assets/fruits.jpg" alt="Fruit Classification">
+            <h3>Fruit Image Classification</h3>
+            <p>Deep learning system using MobileNetV2 (92% accuracy).</p>
+            <a href="https://github.com/inafees14/Fruits_classification" target="_blank">View Project</a>
+          </div>
+          <div class="card">
+            <img src="assets/mental_health.jpg" alt="Mental Health Study">
+            <h3>Mental Health & Social Media</h3>
+            <p>Statistical analysis of 348 participants to study depression predictors.</p>
+            <a href="#">Read More</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Education Section -->
-    <section class="education">
-      <h2>🎓 Education Journey</h2>
-      <ul class="timeline">
-        <li>
-          <h3>M.Sc Data Science</h3>
-          <p>Aligarh Muslim University (2024–2026)</p>
-          <small>Advanced ML, Big Data Analytics, NLP, DBMS</small>
-        </li>
-        <li>
-          <h3>B.Sc Statistics</h3>
-          <p>Aligarh Muslim University (2021–2024)</p>
-        </li>
-      </ul>
-    </section>
+      <!-- Articles Section -->
+      <section class="articles">
+        <h2>📝 Latest Articles</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="assets/transfer.jpg" alt="Article 1">
+            <h3>Understanding Transfer Learning</h3>
+            <p>A beginner-friendly guide to modern DL techniques.</p>
+            <a href="#">Read Article</a>
+          </div>
+          <div class="card">
+            <img src="assets/ai_mental.jpg" alt="Article 2">
+            <h3>AI & Mental Health</h3>
+            <p>How machine learning models can support psychological research.</p>
+            <a href="#">Read Article</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-      <h2>📫 Let's Connect</h2>
-      <p>Feel free to explore my repositories and reach out if you’d like to collaborate.</p>
-      <div class="social-icons">
-        <a href="https://twitter.com/thenafeesiqbal" target="_blank">Twitter</a>
-        <a href="https://instagram.com/thenafeesiqbal" target="_blank">Instagram</a>
-        <a href="https://linkedin.com/in/nafees-iqbal" target="_blank">LinkedIn</a>
-        <a href="https://github.com/inafees14" target="_blank">GitHub</a>
-      </div>
-    </section>
+      <!-- Contact Section -->
+      <section class="contact">
+        <h2>📫 Let's Connect</h2>
+        <p>Feel free to explore my repositories and reach out if you’d like to collaborate.</p>
+        <div class="connections">
+          <a href="https://twitter.com/thenafeesiqbal" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a href="https://instagram.com/thenafeesiqbal" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://linkedin.com/in/nafees-iqbal" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/inafees14" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
-
 </body>
 </html>
