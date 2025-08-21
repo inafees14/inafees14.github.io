@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,6 +16,8 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -24,4 +27,110 @@ nav ul li a {
 
 main {
   padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Profile Card */
+.profile-card {
+  text-align: center;
+  margin-bottom: 3em;
+  background: white;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  width: 200px;   /* balanced size */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+  border: 4px solid #004080;
+}
+
+.profile-card h1 {
+  margin: 0.5em 0 0.2em;
+  color: #004080;
+}
+
+.profile-card p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Section Titles */
+section h2 {
+  color: #004080;
+  border-left: 5px solid #004080;
+  padding-left: 10px;
+  margin-bottom: 1em;
+}
+
+/* Articles & Projects common layout */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 640/427;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5em;
+  font-size: 1.2em;
+  color: #004080;
+}
+
+.card-content h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-content h3 a:hover {
+  text-decoration: underline;
+}
+
+.card-content p {
+  flex-grow: 1;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.card-content .view-link {
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-content .view-link:hover {
+  text-decoration: underline;
 }
