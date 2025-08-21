@@ -102,7 +102,9 @@ section h2 {
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
-  padding: 16px;}
+  padding: 16px;
+  margin-bottom: 20px;
+}
 
 .card:hover {
   border: 1px solid #0ac90a; /* shrink border */
