@@ -223,3 +223,34 @@ section h2 {
 
 /* ---- cards margin ---- */
 .article-card, .project-card { margin-bottom: 20px; }
+
+
+/* Grid fix: your HTML uses .card-grid */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5em}
+
+/* Torn-paper border for Articles & Projects (SVG data-URI) */
+.articles .card,.projects .card{
+  border:12px solid transparent; /* required for border-image */
+  border-image-source:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><defs><filter id='rough'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feDisplacementMap in='SourceGraphic' scale='2'/></filter></defs><rect x='10' y='10' width='100' height='100' fill='none' stroke='%234caf50' stroke-width='12' filter='url(%23rough)' stroke-linejoin='round'/></svg>");
+  border-image-slice:40 fill; border-image-width:12; border-image-repeat:round;
+  background:#fff; padding:16px; border-radius:18px; /* keep your rounded look */
+}
+
+/* Keep torn border on hover + add pressed black shadow (bottom-right only) */
+.articles .card:hover,.projects .card:hover{
+  border:12px solid transparent !important;
+  box-shadow:5px 5px 0 #000;
+}
+
+/* Extra breathing room inside cards (your markup puts text directly in .card) */
+.articles .card h3,.projects .card h3{margin:0 0 .4em;color:#004080}
+.articles .card p,.projects .card p{margin:.2em 0 1em;color:#555}
+
+/* Button look for Read More / View Project */
+.read-more{
+  display:inline-block;margin-top:12px;padding:10px 16px;
+  background:#004080;color:#fff;text-decoration:none;font-weight:700;
+  border-radius:10px;box-shadow:0 0 0 transparent;transition:.25s ease;
+}
+.read-more:hover{background:#4CAF50;box-shadow:3px 3px 0 #000;color:#fff}
+
