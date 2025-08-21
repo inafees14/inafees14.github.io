@@ -57,7 +57,7 @@ main {
   background: white;
   padding: 2em;
   border-radius: 12px;
-  border: 3px solid #90ee90; /* light green border */
+  border: 10px /* light green border */
 }
 
 .profile-card img {
@@ -98,15 +98,15 @@ section h2 {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  border: 3px solid #90ee90; /* light green */
+  border: 5px solid #0ac90a; /* light green */
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
 }
 
 .card:hover {
-  border: 2px solid #90ee90; /* shrink border */
-  box-shadow: 3px 3px 0px #000; /* black only bottom-right */
+  border: 3px solid #0ac90a; /* shrink border */
+  box-shadow: 5px 5px 0px #204020; /* black only bottom-right */
 }
 
 .card img {
@@ -124,7 +124,7 @@ section h2 {
 }
 
 .card-content h3 {
-  margin: 0 0 0.5em;
+  margin: 0.5em 0.5em 0.5em;
   font-size: 1.2em;
   color: #004080;
 }
@@ -159,7 +159,7 @@ section h2 {
   background: white;
   border-radius: 12px;
   padding: 1.5em;
-  border: 3px solid #90ee90;
+  border: 10px ;
 }
 
 /* ---------- Connections Section ---------- */
@@ -177,7 +177,7 @@ section h2 {
   background: white;
   padding: 0.6em 1em;
   border-radius: 8px;
-  border: 2px solid #90ee90;
+  border: 2px solid #0ac90a;
   color: #004080;
   text-decoration: none;
   font-weight: bold;
@@ -185,7 +185,7 @@ section h2 {
 }
 
 .connections a:hover {
-  border: 2px solid #004080;
+  border: 2px solid #204020;
   background: #f0f8ff;
 }
 
