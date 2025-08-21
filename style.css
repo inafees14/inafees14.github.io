@@ -194,3 +194,6 @@ section h2 {
   width: 24px;
   height: 24px;
 }
+
+/* ---- cards margin ---- */
+.article-card, .project-card { margin-bottom: 20px; }
