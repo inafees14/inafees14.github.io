@@ -27,22 +27,41 @@ nav ul li a {
 
 main {
   padding: 2em;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
+  display: block;
 }
 
-/* Profile Card */
+/* ---------- Responsive Layout for Larger Screens ---------- */
+@media (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+  }
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+}
+
+/* ---------- Profile Card ---------- */
 .profile-card {
   text-align: center;
-  margin-bottom: 3em;
   background: white;
   padding: 2em;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid #90ee90; /* light green border */
 }
 
 .profile-card img {
-  width: 200px;   /* balanced size */
+  width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
@@ -60,7 +79,7 @@ main {
   color: #555;
 }
 
-/* Section Titles */
+/* ---------- Section Titles ---------- */
 section h2 {
   color: #004080;
   border-left: 5px solid #004080;
@@ -68,7 +87,7 @@ section h2 {
   margin-bottom: 1em;
 }
 
-/* Articles & Projects common layout */
+/* ---------- Articles & Projects common layout ---------- */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -79,15 +98,15 @@ section h2 {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border: 3px solid #90ee90; /* light green */
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  border: 2px solid #90ee90; /* shrink border */
+  box-shadow: 3px 3px 0px #000; /* black only bottom-right */
 }
 
 .card img {
@@ -105,7 +124,7 @@ section h2 {
 }
 
 .card-content h3 {
-  margin: 0.5em 0.5em 0.5em;
+  margin: 0 0 0.5em;
   font-size: 1.2em;
   color: #004080;
 }
@@ -133,4 +152,44 @@ section h2 {
 
 .card-content .view-link:hover {
   text-decoration: underline;
+}
+
+/* ---------- Education & Skills ---------- */
+.education, .skills {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5em;
+  border: 3px solid #90ee90;
+}
+
+/* ---------- Connections Section ---------- */
+.connections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.connections a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: white;
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  border: 2px solid #90ee90;
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.connections a:hover {
+  border: 2px solid #004080;
+  background: #f0f8ff;
+}
+
+.connections img {
+  width: 24px;
+  height: 24px;
 }
