@@ -98,7 +98,7 @@ section h2 {
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #0ac90a; /* light green */
+  border: 0px solid #0ac90a; /* light green */
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease;
@@ -108,7 +108,7 @@ section h2 {
 
 .card:hover {
   border: 0px solid #0ac90a; /* shrink border */
-  box-shadow: 5px 5px 0px #204020; /* black only bottom-right */
+  box-shadow: 0px 0px 0px #204020; /* black only bottom-right */
 }
 
 .card img {
@@ -124,6 +124,7 @@ section h2 {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .card-content h3 {
