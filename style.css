@@ -90,8 +90,8 @@ section h2 {
 /* ---------- Articles & Projects common layout ---------- */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
 }
 
 .card {
@@ -231,5 +231,3 @@ section h2 {
 
 /* ---- cards margin ---- */
 .article-card, .project-card { margin-bottom: 20px; }
-
-
