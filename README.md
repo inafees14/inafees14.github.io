@@ -47,10 +47,10 @@ portfolio-website/
 ![Homepage Screenshot](assets/homepage.jpg)
 
 ### Screenshot 2
-![About Page Screenshot](assets/about.jpg)
+![About Page Screenshot](assets/ss1.jpg)
 
 ### Screenshot 3
-![About Page Screenshot](assets/about.jpg)
+![About Page Screenshot](assets/ss2.jpg)
 
 ---
 
