@@ -251,6 +251,7 @@ section h2 {
   text-align: center;
   padding: 2em 1em;
   margin-top: auto; /* pushes footer down */
+  border-radius: 25px;
 }
 
 .footer h2 {
