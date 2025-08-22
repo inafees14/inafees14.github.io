@@ -44,13 +44,13 @@ portfolio-website/
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage Screenshot](assets/homepage.jpg)
+![Homepage Screenshot](assets/homepage.png)
 
 ### Screenshot 2
-![About Page Screenshot](assets/ss1.jpg)
+![About Page Screenshot](assets/ss1.png)
 
 ### Screenshot 3
-![About Page Screenshot](assets/ss2.jpg)
+![About Page Screenshot](assets/ss2.png)
 
 ---
 
