@@ -1,4 +1,3 @@
-```markdown
 # 🌐 Personal Portfolio Website
 
 This is my personal portfolio website, built using **HTML, CSS**, and hosted on **GitHub Pages**.  
@@ -83,4 +82,3 @@ This is a personal project, but suggestions and improvements are welcome! Feel f
 ## 📜 License
 
 This project is licensed under the MIT License. You're free to use it as a template for your own portfolio.
-```
