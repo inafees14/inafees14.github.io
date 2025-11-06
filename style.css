@@ -284,3 +284,26 @@ section h2 {
   font-size: 0.9em;
   color: #ddd;
 }
+
+
+/* ---------- Responsive layout: HOME only ---------- */
+@media (min-width: 992px) {
+  body.home main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+  }
+}
+
+/* Default main container behavior for all pages (no giant blank space) */
+main {
+  padding: 2em;
+  max-width: 1100px;      /* a bit narrower to avoid wide emptiness */
+  margin: 0 auto;
+  display: block;         /* single-column by default */
+}
+
+/* Optional: if you add class="page" on non-home pages, you can further control width */
+body.page main {
+  max-width: 900px;       /* even tighter reading width for about/articles/contact */
+}
