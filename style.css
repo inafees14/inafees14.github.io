@@ -295,3 +295,19 @@ section h2 {
   color: #333;
   max-width: 800px;
 }
+
+
+/* Code block styling */
+pre {
+  background: #f4f4f4;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  color: #333;
+}
