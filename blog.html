@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Nafees Iqbal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="articles">
+      <h2>📝 My Blog</h2>
+      <p>Articles, guides, and research notes from my Data Science journey.</p>
+
+      <div class="card-grid" id="blog-posts"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mohammed Nafees Iqbal | Built with 💙 & GitHub Pages</p>
+  </footer>
+
+  <script>
+    // Define posts (add new ones here)
+    const posts = [
+      {
+        title: "Welcome to My Data Science Blog",
+        desc: "An introduction to my blogging journey, what I plan to share, and how you can follow along.",
+        img: "assets/homepage.png",
+        date: "Nov 2025",
+        link: "blog/first-post.html"
+      },
+      {
+        title: "Understanding Convolutional Neural Networks",
+        desc: "Explaining how CNNs learn features from images and how I used them in my fruit classification project.",
+        img: "assets/fruits_p.jpg",
+        date: "Nov 2025",
+        link: "blog/cnn-basics.html"
+      }
+    ];
+
+    // Render blog cards dynamically
+    const container = document.getElementById("blog-posts");
+    posts.forEach(post => {
+      container.innerHTML += `
+        <div class="card">
+          <img src="${post.img}" alt="${post.title}">
+          <h3>${post.title}</h3>
+          <p>${post.desc}</p>
+          <a href="${post.link}" class="read-more">Read Article</a>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>
