@@ -1,12 +1,14 @@
-<!-- Save this as part of each page (index.html, about.html, etc.) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nafees Iqbal - Portfolio</title>
+  <title>Projects | Nafees Iqbal</title>
+  <meta name="description" content="Projects by Mohammed Nafees Iqbal - Data Science Portfolio">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav>
@@ -15,18 +17,49 @@
       <li><a href="about.html">About</a></li>
       <li><a href="articles.html">Articles</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="contacts.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Page-specific content goes here -->
   <main>
-  <h1>Projects</h1>
-  <ul>
-    <li>🍎 Fruit Image Classifier using CNN & MobileNetV2</li>
-    <li>📊 Mental Health Analysis using Statistics</li>
-    <li>🤖 LLM Project: Statistical Evaluation of Prompt Robustness</li>
-  </ul>
+    <section class="articles">
+      <h2>🚀 Featured Projects</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <img src="assets/fruits_p.jpg" alt="Fruit Classification Project">
+          <h3>🍎 Fruit Image Classifier using CNN & MobileNetV2</h3>
+          <p>Deep learning model classifying 11 fruit types using MobileNetV2 achieving 92% validation accuracy.</p>
+          <a href="https://fruit-classification-1-7c2a30615392.herokuapp.com/" target="_blank" class="read-more">Live Demo</a>
+          <a href="https://github.com/inafees14/Fruits_classification" target="_blank" class="read-more">GitHub</a>
+        </div>
+
+        <div class="card">
+          <img src="assets/mental_health.jpg" alt="Mental Health Study">
+          <h3>📊 Mental Health Analysis using Statistics</h3>
+          <p>Statistical exploration of social media impact on mental health using data from 348 participants.</p>
+          <a href="https://github.com/inafees14/social-media-mental-wellbeing" target="_blank" class="read-more">GitHub</a>
+        </div>
+
+        <div class="card">
+          <img src="assets/ai_mental.jpg" alt="LLM Research">
+          <h3>🤖 LLM Project: Statistical Evaluation of Prompt Robustness</h3>
+          <p>Ongoing research to evaluate prompt stability and statistical performance in LLM responses.</p>
+          <a href="#" class="read-more">Coming Soon</a>
+        </div>
+
+        <div class="card">
+          <img src="assets/image_enhance.jpg" alt="Image Enhancement">
+          <h3>🖼️ Image Enhancement with Deep Learning</h3>
+          <p>Exploring neural architectures for low-light and detail restoration tasks. (In Progress)</p>
+          <a href="#" class="read-more">Work in Progress</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <p>© 2025 Mohammed Nafees Iqbal | Built with 💙 & GitHub Pages</p>
+  </footer>
 </body>
 </html>
