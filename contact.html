@@ -1,12 +1,14 @@
-<!-- Save this as part of each page (index.html, about.html, etc.) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nafees Iqbal - Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Contact | Nafees Iqbal</title>
+  <meta name="description" content="Contact page for Mohammed Nafees Iqbal - Data Science Portfolio">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav>
@@ -15,21 +17,37 @@
       <li><a href="about.html">About</a></li>
       <li><a href="articles.html">Articles</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="contacts.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Page-specific content goes here -->
+  <!-- Contact Section -->
   <main>
-    
-<form action="https://send.pageclip.co/abcd1234/contact" class="pageclip-form" method="post">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message"></textarea>
-  <button type="submit" class="pageclip-form__submit">Send</button>
-</form>
+    <section class="articles">
+      <h2>📫 Contact Me</h2>
+      <p>Have questions, collaborations, or ideas to discuss? Feel free to reach out using the form below!</p>
 
-<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+      <form action="https://send.pageclip.co/abcd1234/contact" class="pageclip-form" method="post" style="max-width:600px; margin:auto;">
+        <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:12px; margin:10px 0; border-radius:8px; border:1px solid #ccc;">
+        <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:12px; margin:10px 0; border-radius:8px; border:1px solid #ccc;">
+        <textarea name="message" placeholder="Your Message" rows="5" required style="width:100%; padding:12px; margin:10px 0; border-radius:8px; border:1px solid #ccc;"></textarea>
+        <button type="submit" class="pageclip-form__submit read-more">Send Message</button>
+      </form>
+
+      <div class="connections" style="margin-top:30px; justify-content:center;">
+        <a href="mailto:inafees14@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/nafees-iqbal" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/inafees14" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://twitter.com/thenafeesiqbal" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+    </section>
   </main>
+
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+  <footer class="footer">
+    <p>© 2025 Mohammed Nafees Iqbal | Built with 💙 & GitHub Pages</p>
+  </footer>
 </body>
 </html>
