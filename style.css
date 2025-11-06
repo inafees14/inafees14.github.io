@@ -285,3 +285,13 @@ section h2 {
   color: #ddd;
 }
 
+/* Blog Articles Formatting */
+.articles h2 {
+  margin-top: 1.5em;
+}
+
+.articles p {
+  line-height: 1.7;
+  color: #333;
+  max-width: 800px;
+}
