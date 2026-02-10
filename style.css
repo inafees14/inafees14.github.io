@@ -250,7 +250,14 @@ section h2 {
   color: white;
   text-align: center;
   padding: 2em 1em;
-  margin-top: auto; /* pushes footer down */
+  margin-top: 2em;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  
   border-radius: 25px;
 }
 
