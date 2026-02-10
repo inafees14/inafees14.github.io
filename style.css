@@ -251,14 +251,15 @@ section h2 {
   text-align: center;
   padding: 2em 1em;
   margin-top: 2em;
-  width: 100vw;
+
+  width: 100vw;        /* full viewport width */
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
+  margin-left: -50vw;  /* pull it out of container */
   margin-right: -50vw;
-  
-  border-radius: 25px;
+
+  border-radius: 0;    /* remove rounded card look */
 }
 
 .footer h2 {
